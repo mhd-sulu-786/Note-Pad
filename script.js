@@ -83,7 +83,13 @@ function del() {
     }
     count = count - 1;
     var x = document.getElementById('Files');
-    x.remove(x.selectedIndex);
+    if (x.value==1) {
+        
+    } else {
+        x.remove(x.selectedIndex);
+
+        
+    }
     selet_note = false;
     var x = document.getElementById('Files');
     x.value=1;
