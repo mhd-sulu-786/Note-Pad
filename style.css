@@ -1,0 +1,14 @@
+.btn-danger {
+    width: 25%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#delete,
+#update {
+    display: none;
+}
