@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Note Pad</title>
-    <link rel="shortcut icon" href="https://tse1.mm.bing.net/th?id=OIP.irhcZzX-_GIih7HTss8DiAHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon"
+        href="https://tse1.mm.bing.net/th?id=OIP.irhcZzX-_GIih7HTss8DiAHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
+        type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body class="bg-dark text-light  d-flex flex-column
 justify-content-center ">
     <div id="mainbar" class="container col-md-6 mt-2 p-3">
-       <nav class="row bg-secondary"><h4 class="text-center  text-primary mx-1">Note Pad<button id="add-btn" class="btn mx-2 mt-1 btn-secondary text-center pt-1 ">+</button></h4>
-        <!-- <button  id="file-btn" class="btn mx-3 mt-1 mb-1 btn-secondary text-center px-4 pb-3">Files</button> -->
-        <select id="Files"   onchange="changeFunc();" class="form-select bg-secondary form-select-sm" aria-label=".form-select-sm example">
-            <option  selected> select File</option>
-            
-          </select></nav>
+        <nav id="nav" class="row bg-secondary">
+            <h4 class="text-center   text-primary mx-1">Note Pad<button id="add-btn"
+                    class="btn mx-2 mt-1 btn-secondary text-center pt-1 ">+</button></h4>
+            <!-- <button  id="file-btn" class="btn mx-3 mt-1 mb-1 btn-secondary text-center px-4 pb-3">Files</button> -->
+            <select id="Files" onchange="changeFunc();" class="form-select bg-secondary form-select-sm"
+                aria-label=".form-select-sm example">
+                <option value="1" selected> select File</option>
+
+            </select>
+            <button id="Clear" class="btn btn-danger p-2 h-50 mt-1 mx-2 ">Clear</button>
+            <button id="delete" class="btn btn-danger p-2 h-50 mt-1 mx-2 ">DELETE</button>
+            <button id="update" class="btn btn-success p-2 h-50 mt-1 mx-2 ">update</button>
+        </nav>
         <div class="row bg-light p-2">
             <div class="col-md-12">
                 <input type="text" class="form-control mb-2" id="FormControlInput1" placeholder="Title">
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="write here...🖋" rows="20"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="write here...🖋"
+                    rows="20"></textarea>
 
-                
+
             </div>
-        </div> 
-        
+        </div>
+
 
     </div>
     <script src="./script.js">
 
     </script>
-    
+
 </body>
+
 </html>
